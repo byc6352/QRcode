@@ -1,0 +1,159 @@
+object fMain: TfMain
+  Left = 0
+  Top = 0
+  Caption = 'fMain'
+  ClientHeight = 599
+  ClientWidth = 829
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Image1: TImage
+    Left = 0
+    Top = 105
+    Width = 829
+    Height = 475
+    Align = alClient
+    ExplicitTop = 86
+    ExplicitHeight = 488
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 829
+    Height = 105
+    Align = alTop
+    TabOrder = 0
+    object btnClose: TButton
+      Tag = 4
+      Left = 745
+      Top = 2
+      Width = 75
+      Height = 25
+      Caption = #20851#38381
+      TabOrder = 0
+      OnClick = btnCloseClick
+    end
+    object btnSave: TButton
+      Left = 745
+      Top = 72
+      Width = 75
+      Height = 25
+      Caption = #20445#23384
+      TabOrder = 1
+    end
+    object GroupBox2: TGroupBox
+      Left = 1
+      Top = 1
+      Width = 512
+      Height = 103
+      Align = alLeft
+      Caption = #25991#26412
+      TabOrder = 2
+      object Memo1: TMemo
+        Left = 2
+        Top = 15
+        Width = 508
+        Height = 86
+        Align = alClient
+        Lines.Strings = (
+          'http://ai4330988.vip1.aihost7.top')
+        ScrollBars = ssBoth
+        TabOrder = 0
+        OnChange = Memo1Change
+      end
+    end
+    object GroupBox1: TGroupBox
+      Left = 513
+      Top = 1
+      Width = 217
+      Height = 103
+      Align = alLeft
+      Caption = #21442#25968#35774#32622
+      TabOrder = 3
+      object Label2: TLabel
+        Left = 8
+        Top = 20
+        Width = 43
+        Height = 13
+        Caption = 'Encoding'
+      end
+      object Label3: TLabel
+        Left = -1
+        Top = 50
+        Width = 52
+        Height = 13
+        Caption = 'Quiet zone'
+      end
+      object Label1: TLabel
+        Left = 7
+        Top = 80
+        Width = 36
+        Height = 13
+        Caption = #22823#23567#65306
+      end
+      object cmbEncoding: TComboBox
+        Left = 57
+        Top = 17
+        Width = 145
+        Height = 21
+        Style = csDropDownList
+        ItemIndex = 0
+        TabOrder = 0
+        Text = 'Auto'
+        Items.Strings = (
+          'Auto'
+          'Numeric'
+          'Alphanumeric'
+          'ISO-8859-1'
+          'UTF-8 without BOM'
+          'UTF-8 with BOM')
+      end
+      object edtQuietZone: TEdit
+        Left = 57
+        Top = 47
+        Width = 89
+        Height = 21
+        TabOrder = 1
+        Text = '4'
+      end
+      object cmbSize: TComboBox
+        Left = 56
+        Top = 78
+        Width = 145
+        Height = 21
+        ItemIndex = 0
+        TabOrder = 2
+        Text = '600*600'
+        Items.Strings = (
+          '600*600'
+          '480*480'
+          '320*320'
+          '144*144'
+          '72*72'
+          '800*800'
+          '1024*1024')
+      end
+    end
+  end
+  object Bar1: TStatusBar
+    Left = 0
+    Top = 580
+    Width = 829
+    Height = 19
+    Panels = <
+      item
+        Width = 600
+      end
+      item
+        Width = 50
+      end>
+  end
+end

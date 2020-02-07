@@ -1,0 +1,40 @@
+unit uQRCode;
+
+interface
+uses
+  windows, Vcl.Graphics,DelphiZXingQRCode;
+type
+  TQRCodeEncoding = (qrAuto, qrNumeric, qrAlphanumeric, qrISO88591, qrUTF8NoBOM, qrUTF8BOM);
+  TQRCode = class
+    private
+      mQRCodeBitmap:TBitmap;
+      mEncoding:TQRCodeEncoding;
+      procedure setEncoding(Encoding:TQRCodeEncoding);
+    public
+      constructor Create();
+      destructor Destroy;   //override;
+      property QRCodeBitmap:TBitmap read mQRCodeBitmap;
+      property Encoding:TQRCodeEncoding read mEncoding;
+  end;
+var
+  QRCode:TQRCode;
+implementation
+constructor TQRCode.Create();
+begin
+  mQRCodeBitmap:=tBitmap.create;
+end;
+destructor TQRCode.Destroy;
+begin
+  mQRCodeBitmap.free;
+end;
+{-------------------------------------------------------------------------------
+过程名:    setEncoding 设置编码模式
+参数:      Encoding:TQRCodeEncoding  1.编码模式；
+返回值:    无。
+
+-------------------------------------------------------------------------------}
+procedure TQRCode.setEncoding(Encoding:TQRCodeEncoding);
+begin
+  mEncoding:=Encoding;
+end;
+end.

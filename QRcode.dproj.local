@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/02/06 15:38:45.000.373,=D:\works\delphi\Unit1.pas</Transaction>
+    <Transaction>2020/02/06 15:39:20.000.082,D:\works\delphi\Unit1.dfm=D:\works\delphi\QRcode\uMain.dfm</Transaction>
+    <Transaction>2020/02/06 15:39:20.000.082,D:\works\delphi\Unit1.pas=D:\works\delphi\QRcode\uMain.pas</Transaction>
+    <Transaction>2020/02/06 15:39:32.000.526,D:\works\delphi\Project1.dproj=D:\works\delphi\QRcode\QRcode.dproj</Transaction>
+    <Transaction>2020/02/06 15:44:08.000.047,=D:\works\delphi\QRcode\uConfig.pas</Transaction>
+    <Transaction>2020/02/06 15:44:08.000.053,=D:\works\delphi\QRcode\uLog.pas</Transaction>
+    <Transaction>2020/02/06 16:14:06.000.794,=D:\works\delphi\QRcode\DelphiZXIngQRCode.pas</Transaction>
+    <Transaction>2020/02/06 16:54:58.000.110,=D:\works\delphi\QRcode\Unit1.pas</Transaction>
+    <Transaction>2020/02/06 16:55:38.000.827,D:\works\delphi\QRcode\Unit1.pas=D:\works\delphi\QRcode\uQRCode.pas</Transaction>
+  </Transactions>
+</BorlandProject>
